@@ -1,0 +1,56 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: Verdana, sans-serif;
+    background-image: url("BackgroundIMG.png");
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+.Header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    margin-top: 20px;
+    border-bottom:2px solid black;
+    border-top:2px solid black;
+    font-size: x-large;
+    background-color: white;
+}
+
+#NavBar{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding-top: 15px;
+    padding-left: 50vw;
+    list-style-type: none;
+}
+
+nav {
+    height: 50px;
+}
+
+@media screen and (max-width: 1262px) {
+    .Header{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #NavBar {
+        display: flex;
+        flex-flow: column;
+        align-self: center;
+        width: 20vw;
+        padding-left: 0px;
+    }
+    
+    #Logo {
+        align-self: center;
+    }
+}
