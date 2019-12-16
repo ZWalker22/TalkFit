@@ -10,6 +10,8 @@ body {
   background-image: url("BackgroundIMG.png");
   background-repeat: no-repeat;
   background-position-y: top;
+  background-size: cover;
+  width: 100%;
 }
 
 .Header {
@@ -26,7 +28,6 @@ body {
 #NavBar {
   display: flex;
   justify-content: space-between;
-  width: 400px;
   padding-top: 15px;
   padding-left: 50vw;
   list-style-type: none;
@@ -45,11 +46,23 @@ nav {
   padding-bottom: 3rem;
 }
 
+#Paragraph1 h3 {
+  padding-top: 12px;
+}
+
 #Paragraph1 {
   display: flex;
   flex-flow: column;
   padding: 1rem;
   width: 90vw;
+}
+
+#Paragraph1 p {
+  padding: 15px;
+}
+
+#Paragraph1 li {
+  padding: 5px;
 }
 
 iframe {
@@ -61,21 +74,78 @@ iframe {
     flex-wrap: wrap;
     flex-flow: column;
     padding: 1rem;
+    width: 99vw;
 }
+
+#ContactInfo h3 {
+  padding: 10px;
+}
+
+#ContactInfo p {
+  padding: 15px;
+  display: flex;
+}
+
+#About {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  padding: 1rem;
+  width: 99vw;
+}
+
+#About p {
+  padding: 15px;
+  display: flex;
+}
+
+#About li {
+  padding: 10px;
+}
+
+#About h3 {
+  padding: 10px;
+}
+
+#Pros {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  padding: 1rem;
+  width: 99vw;
+}
+
+#Pros p {
+  padding: 15px;
+  display: flex;
+}
+
+#Pros h3 {
+  padding: 10px;
+}
+
+#Pros h4 {
+  padding: 15px;
+}
+
+#Pros li {
+  padding: 15px;
+}
+
 @media screen and (max-width: 1262px) {
   .Header {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-bottom: 8rem;
+    padding-bottom: 7rem;
   }
 
   #NavBar {
     display: flex;
     flex-flow: column;
     align-self: center;
-    width: 20vw;
+    width: 30vw;
     padding-left: 0px;
   }
 
@@ -86,5 +156,10 @@ iframe {
   iframe {
     padding: 2rem;
     width: 100%;
+  }
+
+  #PhoneIMG {
+    align-self: center;
+    padding-bottom: 1rem;
   }
 }
