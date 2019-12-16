@@ -1,56 +1,90 @@
 * {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: white;
-    font-family: Verdana, sans-serif;
-    background-image: url("BackgroundIMG.png");
-    background-repeat: no-repeat;
-    background-position-y: top;
+  background-color: white;
+  font-family: Verdana, sans-serif;
+  background-image: url("BackgroundIMG.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
 }
 
 .Header {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1.5rem;
-    margin-top: 20px;
-    border-bottom:2px solid black;
-    border-top:2px solid black;
-    font-size: x-large;
-    background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  margin-top: 20px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  font-size: x-large;
+  background-color: white;
 }
 
-#NavBar{
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    padding-top: 15px;
-    padding-left: 50vw;
-    list-style-type: none;
+#NavBar {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding-top: 15px;
+  padding-left: 50vw;
+  list-style-type: none;
 }
 
 nav {
-    height: 50px;
+  height: 50px;
 }
 
+#Details {
+  padding: 1rem;
+}
+
+#PhoneIMG {
+  align-self: center;
+  padding-bottom: 3rem;
+}
+
+#Paragraph1 {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  width: 90vw;
+}
+
+iframe {
+    padding: 1rem;
+}
+
+#ContactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    padding: 1rem;
+}
 @media screen and (max-width: 1262px) {
-    .Header{
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    #NavBar {
-        display: flex;
-        flex-flow: column;
-        align-self: center;
-        width: 20vw;
-        padding-left: 0px;
-    }
-    
-    #Logo {
-        align-self: center;
-    }
+  .Header {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 8rem;
+  }
+
+  #NavBar {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    width: 20vw;
+    padding-left: 0px;
+  }
+
+  #Logo {
+    align-self: center;
+  }
+
+  iframe {
+    padding: 2rem;
+    width: 100%;
+  }
 }
